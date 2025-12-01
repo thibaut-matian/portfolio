@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Ajoute ça pour l'effet 3D */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Scrollbar personnalisée style "Liquid" */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; 
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4; /* Cyan au survol */
+}
+
+/* Lissage des polices */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
