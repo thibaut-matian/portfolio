@@ -107,7 +107,7 @@ const Hero = () => {
 
           <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tight">
             <span className="bg-clip-text text-transparent bg-linear-to-b from-white via-white to-white/50">
-              CRÉATIF
+              WEB
             </span>
             <br />
             <span className="bg-clip-text text-transparent bg-linear-to-r from-cyan-400 to-purple-500 blur-sm absolute opacity-50 select-none" aria-hidden="true">
