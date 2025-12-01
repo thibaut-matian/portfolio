@@ -21,36 +21,26 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // Remplacer ces 3 chaînes par tes propres IDs EmailJS plus tard
-    // Si tu n'as pas encore de compte, le formulaire simulera juste un envoi visuel.
-    
-    /* POUR ACTIVER L'ENVOI RÉEL :
-       1. Crée un compte sur emailjs.com (Gratuit)
-       2. Crée un Service (Gmail) et un Template
-       3. Remplace les '...' ci-dessous
-    */
 
     emailjs.send(
-      'YOUR_SERVICE_ID',     // ex: 'service_xyz'
-      'YOUR_TEMPLATE_ID',    // ex: 'template_abc'
+      'service_pupxg8a',    
+      'template_0vjsqs9',    
       {
         from_name: formState.name,
         to_name: "Moi",
         from_email: formState.email,
         message: formState.message,
       },
-      'YOUR_PUBLIC_KEY'      // ex: 'user_123456'
+      'krdN8CNKIhyQQNV3h'      
     )
     .then(() => {
       setLoading(false);
       setSuccess(true);
       setFormState({ name: "", email: "", message: "" });
-      // Reset du message de succès après 5 secondes
       setTimeout(() => setSuccess(false), 5000);
     }, (error) => {
       setLoading(false);
       console.error(error);
-      // Mode démo : si pas de clés, on fait comme si ça marchait pour le test visuel
       if(error.text?.includes("The user ID")) {
           setSuccess(true); 
           setTimeout(() => setSuccess(false), 5000);

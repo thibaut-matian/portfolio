@@ -16,8 +16,7 @@ const skills = [
 const About = () => {
   
   const handleDownloadCV = () => {
-    // Rappel : mets ton fichier 'cv.pdf' dans le dossier 'public'
-    // window.open("/cv.pdf", "_blank");
+    window.open("/cv/index.html", "_blank");
     alert("Lien CV à configurer (voir code)");
   };
 

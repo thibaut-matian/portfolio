@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Thibaut Matian</title>
+  <!-- <link rel="icon" type="image/png" href="assets/img/flexible-access-svgrepo-com.svg"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="landing-page">
+    <div id="code-particles"></div>
+    <div class="landing-content">
+      <h1 class="glitch-text">THIBAUT MATIAN</h1>
+      <button id="enter-btn">INITIALISER LE CV</button>
+    </div>
+  </div>
+
+  <div class="bg-liquid">
+    <div class="bg-liquid__blob bg-liquid__blob--one"></div>
+    <div class="bg-liquid__blob bg-liquid__blob--two"></div>
+    <div class="bg-liquid__grain"></div>
+  </div>
+
+  <main class="cv-shell" role="main">
+    <header class="cv-header glass reveal" aria-labelledby="cv-name">
+      <!-- Avatar temporairement commenté - ajouter Technology.png dans assets/img/ -->
+      <!-- <div class="avatar">
+        <img src="assets/img/Technology.png" alt="Thibaut Matian - avatar" />
+      </div> -->
+      <div class="titleblock">
+        <h1 id="cv-name">Thibaut Matian</h1>
+        <p id="typewriter" class="subtitle">Développeur Web Junior</p>
+        <!-- Images temporairement commentées - à ajouter dans assets/img/ -->
+        <!-- <ul class="stack-icons" aria-label="Technologies principales">
+          <li><img src="assets/img/html-5-svgrepo-com.svg" alt="HTML" /></li>
+          <li><img src="assets/img/css-3-svgrepo-com.svg" alt="CSS" /></li>
+          <li><img src="assets/img/git-svgrepo-com.svg" alt="Git" /></li>
+        </ul> -->
+      </div>
+    </header>
+
+    <section class="cv-grid">
+      <aside class="sidebar">
+        <section class="glass card reveal" aria-labelledby="contact-title">
+          <h2 id="contact-title" class="card__title">Contact</h2>
+          <ul class="contact">
+            <li>
+              <span class="label">Adresse</span>
+              <span>4 traverse de la Roseraie, 13007 Marseille</span>
+            </li>
+            <li>
+              <span class="label">Téléphone</span>
+              <a href="tel:+33687792256">06 87 79 52 23</a>
+            </li>
+            <li>
+              <span class="label">Email</span>
+              <a href="mailto:thibaut@example.com">thibaut.matian@gmail.com</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="glass card reveal" aria-labelledby="skills-title">
+          <h2 id="skills-title" class="card__title">Compétences</h2>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Git</span>
+            <span class="tag">Responsive Design</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </section>
+
+        <section class="glass card reveal" aria-labelledby="social-title">
+          <h2 id="social-title" class="card__title">Réseaux</h2>
+          <!-- Images de réseaux sociaux temporairement commentées -->
+          <!-- <div class="socials">
+            <a href="#" aria-label="Discord"><img src="assets/img/discord.svg" alt="Discord" /></a>
+            <a href="#" aria-label="Twitter / X"><img src="assets/img/twitter.svg" alt="Twitter" /></a>
+            <a href="#" aria-label="Instagram"><img src="assets/img/instagram.svg" alt="Instagram" /></a>
+          </div> -->
+        </section>
+      </aside>
+
+      <section class="content">
+        <section class="glass card reveal" aria-labelledby="about-title">
+          <h2 id="about-title" class="card__title">À propos</h2>
+          <p>
+            Passionné par le développement web, je suis actuellement en formation pour devenir développeur web junior. Autonome, curieux et motivé.
+          </p>
+        </section>
+
+        <section class="glass card reveal" aria-labelledby="exp-title">
+          <h2 id="exp-title" class="card__title">Expérience</h2>
+          <ul class="timeline">
+            <li>
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>Formation Développeur Web / Mobile <span class="pill">2025</span></h3>
+                <p>Développeur full-stack (ou front-end/back-end) axé sur la conception d'expériences utilisateur fluides sur web et mobile</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>Auto-projets</h3>
+                <p>Mini-sites et page CV interactive.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>Chef de salle <span class="pill">2024</span></h3>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>Serveur <span class="pill">2020–2023</span></h3>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="glass card reveal" aria-labelledby="edu-title">
+          <h2 id="edu-title" class="card__title">Formation</h2>
+          <ul class="list">
+            <li>
+              <strong>Formation Développeur Web</strong> — 2025 — La Plateforme
+            </li>
+            <li>
+              <strong>L1 Droit</strong> — 2016–2017 — Avignon Hannah Arendt
+            </li>
+            <li>
+              <strong>Baccalauréat Littéraire</strong> — 2016
+            </li>
+          </ul>
+        </section>
+
+        <section class="glass card reveal" aria-labelledby="projects-title">
+          <h2 id="projects-title" class="card__title">Projets</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/img/screenshots/salle-sport-screenshot.jpg" alt="Screenshot Salle de Sport" class="project-screenshot" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <a href="salle de sport" target="_blank" class="btn-icon" title="Voir le projet">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Salle de Sport</h3>
+                <p>Site web pour une salle de sport avec présentation des services et équipements</p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">Responsive</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/img/screenshots/ping-pong-screenshot.jpg" alt="Screenshot Ping Pong" class="project-screenshot" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <a href="http://localhost/ping%20pong/" target="_blank" class="btn-icon" title="Voir le projet">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Ping Pong</h3>
+                <p>Jeu de ping pong interactif développé en JavaScript</p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">SQL</span>
+                  <span class="tech-tag">PHP</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/img/screenshots/fansite-screenshot.jpg" alt="Screenshot Fansite" class="project-screenshot" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <a href="http://localhost/fansite/" target="_blank" class="btn-icon" title="Voir le projet">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Fansite</h3>
+                <p>Site fan dédié à un univers ou personnalité avec galerie et contenu interactif</p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/img/screenshots/memory-screenshot.jpg" alt="Screenshot Memory" class="project-screenshot" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <a href="http://localhost/memory/" target="_blank" class="btn-icon" title="Voir le projet">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Memory</h3>
+                <p>Jeu de mémoire avec cartes à retourner et système de score</p>
+                <div class="project-tech">
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">SQL</span>
+                  <span class="tech-tag">HTML</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/img/screenshots/app-favorite-screenshot.jpg" alt="Screenshot App Favorite" class="project-screenshot" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <a href="http://localhost/app_favorite/" target="_blank" class="btn-icon" title="Voir le projet">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>App Favorite</h3>
+                <p>Application de gestion de favoris avec sauvegarde locale</p>
+                <div class="project-tech">
+                  <span class="tech-tag">HMTL</span>
+                  <span class="tech-tag">FRAMEWORK</span>
+                  <span class="tech-tag">TAILWIND/DAISYUI</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/img/screenshots/voyages-screenshot.jpg" alt="Screenshot Site Voyage" class="project-screenshot" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <a href="http://localhost/voyages/" target="_blank" class="btn-icon" title="Voir le projet">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Site Voyage</h3>
+                <p>Site de présentation de destinations avec galerie photos et informations</p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">Responsive</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/img/screenshots/rendez-vous-screenshot.jpg" alt="Screenshot Rendez-vous" class="project-screenshot" />
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <a href="http://localhost/runtrack3/jour11&12/" target="_blank" class="btn-icon" title="Voir le projet">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Rendez-vous</h3>
+                <p>Application de gestion de rendez-vous avec calendrier interactif</p>
+                <div class="project-tech">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Date/Time</span>
+                  <span class="tech-tag">Calendar</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <footer class="cv-footer glass reveal" role="contentinfo">
+      <small>&copy; 2025 Thibaut Matian — Tous droits réservés.</small>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
