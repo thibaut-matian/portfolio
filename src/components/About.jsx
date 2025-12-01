@@ -17,7 +17,6 @@ const About = () => {
   
   const handleDownloadCV = () => {
     window.open("/cv/index.html", "_blank");
-    alert("Lien CV à configurer (voir code)");
   };
 
   return (
