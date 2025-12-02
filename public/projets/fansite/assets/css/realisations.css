@@ -1,0 +1,169 @@
+/* Styles spécifiques à la page réalisations */
+section > article {
+    background: #fff6e3;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(235,77,109,0.08);
+    padding: 1em;
+    margin-bottom: 1.5em;
+}
+ul {
+    padding-left: 1.5em;
+}
+article h2 {
+    color: #f0932b;
+}
+
+.personnages-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2em;
+    margin: 1.5em 0;
+}
+
+.card-liquid {
+    background: linear-gradient(135deg, #f0932b 60%, #eb4d6d 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(235,77,109,0.12);
+    padding: 1em 0.5em 0.7em 0.5em;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-liquid::before {
+    content: "";
+    position: absolute;
+    left: -40%;
+    top: 70%;
+    width: 180%;
+    height: 60%;
+    background: radial-gradient(circle at 50% 50%, #fff6e3 0%, transparent 70%);
+    opacity: 0.18;
+    transform: scale(1) skewY(-8deg);
+    transition: opacity 0.3s, top 0.3s;
+    z-index: 0;
+}
+
+.card-liquid:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(235,77,109,0.18);
+}
+
+.card-liquid:hover::before {
+    opacity: 0.35;
+    top: 60%;
+}
+
+.card-liquid img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.7em;
+    border: 3px solid #fff6e3;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: #fff6e3;
+}
+
+.card-liquid h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(235,77,109,0.12);
+}
+
+.card-liquid .desc,
+.card-liquid .localisation,
+.card-liquid .fruit {
+    font-size: 0.95em;
+    color: #fffbe6;
+    margin: 0.3em 0;
+}
+
+.arcs-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+.arc-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(235,77,109,0.08);
+    padding: 1em;
+    text-align: center;
+    border: 2px solid #f0932b;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arc-card:hover {
+    box-shadow: 0 6px 18px rgba(235,77,109,0.15);
+    border-color: #eb4d6d;
+}
+
+.arc-card .arc-img {
+    width: 100%;
+    max-width: 220px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 0.7em;
+    box-shadow: 0 2px 8px rgba(235,77,109,0.08);
+    background: #fff6e3;
+}
+
+.arc-card h3 {
+    margin: 0 0 0.5em 0;
+    color: #f0932b;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.arc-card p {
+    margin: 0;
+    color: #444;
+    font-size: 0.98em;
+}
+
+@media (max-width: 600px) {
+    section > article {
+        padding: 0.7em;
+        font-size: 1em;
+    }
+    .personnages-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.7em;
+    }
+    .card-liquid img {
+        width: 60px;
+        height: 60px;
+    }
+    .arcs-cards {
+        grid-template-columns: 1fr;
+        gap: 0.7em;
+    }
+    .arc-card .arc-img {
+        height: 60px;
+    }
+}
+
+body {
+    background: url('../image/backreal.png') center center/cover no-repeat fixed;
+    min-height: 100vh;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.75); /* blanc semi-transparent */
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 1100px;
+}

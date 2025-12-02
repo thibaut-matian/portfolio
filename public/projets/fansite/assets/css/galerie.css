@@ -1,0 +1,105 @@
+/* Styles spécifiques à la galerie photos */
+.gallery {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+.gallery figure {
+    background: #fff6e3;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(235,77,109,0.08);
+    overflow: hidden;
+    padding: 1em;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+.gallery figure:hover {
+    box-shadow: 0 4px 16px rgba(235,77,109,0.15);
+}
+.gallery img {
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.gallery figcaption {
+    color: #f0932b;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Styles spécifiques à la galerie colorspread */
+.gallery-colorspread {
+    max-width: 1400px;
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5em;
+}
+
+.gallery-colorspread figure {
+    background: #fff6e3;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(235,77,109,0.08);
+    padding: 0.7em;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.gallery-colorspread figure:hover {
+    box-shadow: 0 8px 24px rgba(235,77,109,0.15);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.gallery-colorspread img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;    /* Augmente la taille maximale des colorspread */
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+    background: #fff;
+}
+
+@media (max-width: 900px) {
+    .gallery-colorspread {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-colorspread img {
+        max-height: 320px; /* Taille intermédiaire sur tablette */
+    }
+}
+@media (max-width: 600px) {
+    .gallery-colorspread {
+        grid-template-columns: 1fr;
+    }
+    .gallery-colorspread img {
+        max-height: 180px; /* Taille réduite sur mobile */
+    }
+}
+
+body {
+    background: url('../image/backgale.png') center center/cover no-repeat fixed;
+    min-height: 100vh;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.75); /* blanc semi-transparent */
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 1100px;
+}
