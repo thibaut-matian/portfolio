@@ -140,7 +140,7 @@ const Contact = () => {
                 disabled={loading}
                 className="btn border-none bg-linear-to-r from-cyan-500 to-blue-500 text-white font-bold py-4 rounded-xl hover:scale-[1.02] transition-transform shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {loading ? "Envoi en cours..." : "Envoyer le message 🚀"}
+                {loading ? "Envoi en cours..." : "Envoyer le message "}
               </button>
 
               {/* Message de Succès / Erreur */}
