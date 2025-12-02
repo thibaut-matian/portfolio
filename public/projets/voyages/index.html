@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyages - Découvrez le monde</title>
+    <link rel="stylesheet" href="css/voyages.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="tricolore">
+                    <div class="tricolore-band bleu"></div>
+                    <div class="tricolore-band blanc"></div>
+                    <div class="tricolore-band rouge"></div>
+                </div>
+                <h1> GlobeTrotters</h1>
+            </div>
+            
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Par continent ▾</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h4>Europe</h4>
+                                <a href="france.html">🇫🇷 France</a>
+                            </div>
+                            <div class="dropdown-section">
+                                <h4>Asie</h4>
+                                <a href="japon.html">🇯🇵 Japon</a>
+                            </div>
+                            <div class="dropdown-section">
+                                <h4>Amérique du Sud</h4>
+                                <a href="bresil.html">🇧🇷 Brésil</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Par voyageur ▾</a>
+                        <div class="dropdown-menu simple">
+                            <a href="france.html">Marie - France</a>
+                            <a href="japon.html">Kenji - Japon</a>
+                            <a href="bresil.html">Carlos - Brésil</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Explorez le monde avec nous</h2>
+                <p>Découvrez nos destinations favorites à travers l'Europe, l'Asie et l'Amérique du Sud</p>
+                <a href="#destinations" class="btn-primary">Découvrir nos voyages</a>
+            </div>
+            <div class="hero-image"></div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations" class="destinations">
+            <div class="container">
+                <h3>Nos destinations coups de cœur</h3>
+                <div class="destinations-grid">
+                    <article class="destination-card">
+                        <div class="card-image france-bg"></div>
+                        <div class="card-content">
+                            <h4>France</h4>
+                            <p>Art de vivre, gastronomie et patrimoine exceptionnel</p>
+                            <ul class="highlights">
+                                <li>Paris et ses musées</li>
+                                <li>Châteaux de la Loire</li>
+                                <li>Côte d'Azur</li>
+                            </ul>
+                            <a href="france.html" class="btn-secondary">Explorer</a>
+                        </div>
+                    </article>
+
+                    <article class="destination-card">
+                        <div class="card-image japon-bg"></div>
+                        <div class="card-content">
+                            <h4>Japon</h4>
+                            <p>Traditions millénaires et modernité futuriste</p>
+                            <ul class="highlights">
+                                <li>Temples de Kyoto</li>
+                                <li>Tokyo et sa technologie</li>
+                                <li>Mont Fuji</li>
+                            </ul>
+                            <a href="japon.html" class="btn-secondary">Explorer</a>
+                        </div>
+                    </article>
+
+                    <article class="destination-card">
+                        <div class="card-image bresil-bg"></div>
+                        <div class="card-content">
+                            <h4>Brésil</h4>
+                            <p>Nature sauvage, plages paradisiaques et culture vibrante</p>
+                            <ul class="highlights">
+                                <li>Rio de Janeiro</li>
+                                <li>Amazonie</li>
+                                <li>Iguazu</li>
+                            </ul>
+                            <a href="bresil.html" class="btn-secondary">Explorer</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Notre passion du voyage</h3>
+                        <p>Nous sommes une équipe de passionnés qui aimons partager nos découvertes. Chaque destination a été soigneusement sélectionnée pour vous offrir une expérience authentique.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <strong>3</strong>
+                                <span>Continents</span>
+                            </div>
+                            <div class="stat">
+                                <strong>15+</strong>
+                                <span>Villes visitées</span>
+                            </div>
+                            <div class="stat">
+                                <strong>100%</strong>
+                                <span>Expériences authentiques</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature">
+                            <h4> Guides détaillés</h4>
+                            <p>Informations pratiques et conseils d'initiés</p>
+                        </div>
+                        <div class="feature">
+                            <h4>💰 Budgets réalistes</h4>
+                            <p>Estimations précises pour planifier votre voyage</p>
+                        </div>
+                        <div class="feature">
+                            <h4> Design responsive</h4>
+                            <p>Accessible partout, sur tous vos appareils</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <div class="container">
+                <h3>Planifiez votre prochain voyage</h3>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination souhaitée</label>
+                        <select id="destination" name="destination">
+                            <option value="">Choisissez une destination</option>
+                            <option value="france">France</option>
+                            <option value="japon">Japon</option>
+                            <option value="bresil">Brésil</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Envoyer la demande</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 GlobeTrotters - Fait avec ❤️ pour les voyageurs</p>
+        </div>
+    </footer>
+</body>
+</html>

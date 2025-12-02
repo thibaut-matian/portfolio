@@ -4,37 +4,37 @@ import { useState } from "react";
 const projectsData = [
   {
     id: 1,
-    title: "E-Commerce Liquid",
-    description: "Une boutique ultra-rapide avec panier dynamique et animations de transition.",
-    tags: ["React", "Stripe", "Framer Motion"],
-    link: "https://github.com/ton-pseudo/projet-1", // Mets tes liens ici
+    title: "Secret Santa",
+    description: "Un site ultra-rapide pour évévements comme secret santa, ou cadeau entre personnes",
+    tags: ["React", "Tailwind/DaisyUI", "API"],
+    link: "https://santa-react-gamma.vercel.app", 
     color: "from-cyan-400 to-blue-600",
     image: "/projets/img/secret_santa.png"
   },
   {
     id: 2,
-    title: "Dashboard SaaS",
-    description: "Interface d'administration complexe avec graphiques en temps réel.",
-    tags: ["Next.js", "Tailwind", "Recharts"],
-    link: "https://github.com/ton-pseudo/projet-2",
+    title: "Site de Voyage",
+    description: "Site vitrine de site de voyage.",
+    tags: ["HTML", "CSS"],
+    link: "/projets/voyages/index.html",
     color: "from-purple-400 to-pink-600",
     image: "/projets/img/voyage.png"
   },
   {
     id: 3,
-    title: "AI Chat Interface",
-    description: "Une interface de chat fluide connectée à l'API OpenAI.",
-    tags: ["React", "Node.js", "OpenAI"],
-    link: "https://github.com/ton-pseudo/projet-3",
+    title: "Memory",
+    description: "Une interface de memory game avec connexion/inscription et classement.",
+    tags: ["HTML", "CSS/LIQUID EFFECT", "SQL"],
+    link: "https://github.com/thibaut-matian/memory.git",
     color: "from-emerald-400 to-cyan-600",
     image: "/projets/img/memory.png"
   },
   {
     id: 4,
-    title: "3D Portfolio V1",
-    description: "Exploration de la 3D web avec Three.js et modèles interactifs.",
-    tags: ["Three.js", "R3F", "Blender"],
-    link: "https://github.com/ton-pseudo/projet-4",
+    title: "Fansite",
+    description: "Apprentissage de l'HTML/CSS par la creation d'un fansite.",
+    tags: ["HTML", "CSS"],
+    link: "/projets/fansite/index.html",
     color: "from-orange-400 to-red-600",
     image: "/projets/img/fansite.png"
   },

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brésil - Samba, nature et joie de vivre</title>
+    <link rel="stylesheet" href="css/voyages.css">
+    <link rel="stylesheet" href="css/bresil.css">
+</head>
+<body class="bresil-page">
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="tricolore">
+                    <div class="tricolore-band bleu"></div>
+                    <div class="tricolore-band blanc"></div>
+                    <div class="tricolore-band rouge"></div>
+                </div>
+                <h1><a href="index.html"> GlobeTrotters</a></h1>
+            </div>
+            
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Par continent ▾</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-section">
+                                <h4>Europe</h4>
+                                <a href="france.html">🇫🇷 France</a>
+                            </div>
+                            <div class="dropdown-section">
+                                <h4>Asie</h4>
+                                <a href="japon.html">🇯🇵 Japon</a>
+                            </div>
+                            <div class="dropdown-section">
+                                <h4>Amérique du Sud</h4>
+                                <a href="bresil.html" class="active">🇧🇷 Brésil</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Par voyageur ▾</a>
+                        <div class="dropdown-menu simple">
+                            <a href="france.html">Marie - France</a>
+                            <a href="japon.html">Kenji - Japon</a>
+                            <a href="bresil.html" class="active">Carlos - Brésil</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Brésil -->
+        <section class="country-hero">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="country-intro">
+                        <h1> Brasil</h1>
+                        <p class="country-subtitle">Terra da alegria • Terre de joie</p>
+                        <div class="country-tags">
+                            <span class="tag">Nature</span>
+                            <span class="tag">Plages</span>
+                            <span class="tag">Carnaval</span>
+                            <span class="tag">Diversité</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction avec layout asymétrique -->
+        <section class="bresil-intro">
+            <div class="container">
+                <div class="intro-asymetric">
+                    <div class="intro-content">
+                        <h2> L'esprit brésilien</h2>
+                        <p class="lead">Le Brésil, c'est la démesure dans toute sa splendeur : des plages infinies de Rio aux forêts mystérieuses d'Amazonie, de la samba carioca aux rythmes de Salvador, c'est un pays continent qui ne laisse personne indifférent.</p>
+                        
+                        <div class="bresil-essence">
+                            <div class="essence-item">
+                                <div class="essence-icon"></div>
+                                <h4>Littoral paradisiaque</h4>
+                                <p>7 400 km de côtes avec Copacabana, Ipanema et des centaines de plages secrètes</p>
+                            </div>
+                            <div class="essence-item">
+                                <div class="essence-icon"></div>
+                                <h4>Amazonie</h4>
+                                <p>60% de la forêt amazonienne, poumon de la planète et biodiversité unique</p>
+                            </div>
+                            <div class="essence-item">
+                                <div class="essence-icon"></div>
+                                <h4>Culture vibrante</h4>
+                                <p>Carnaval, capoeira, samba et une joie de vivre contagieuse</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <aside class="bresil-sidebar">
+                        <div class="sidebar-card climate">
+                            <h3> Climat tropical</h3>
+                            <div class="climate-info">
+                                <div class="season">
+                                    <strong>Été (Dec-Mar)</strong>
+                                    <span>25-35°C • Saison des pluies</span>
+                                </div>
+                                <div class="season">
+                                    <strong>Hiver (Jun-Sep)</strong>
+                                    <span>20-28°C • Saison sèche</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-card practical">
+                            <h3>ℹ Infos pratiques</h3>
+                            <dl class="practical-list">
+                                <dt>Capitale</dt>
+                                <dd>Brasília</dd>
+                                <dt>Plus grande ville</dt>
+                                <dd>São Paulo (12M hab.)</dd>
+                                <dt>Langue</dt>
+                                <dd>Portugais</dd>
+                                <dt>Monnaie</dt>
+                                <dd>Real (R$)</dd>
+                                <dt>Fuseau</dt>
+                                <dd>UTC-3 à UTC-5</dd>
+                            </dl>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Régions avec design en masonry/grid -->
+        <section class="regions-bresil">
+            <div class="container">
+                <h2> Découvrir les régions</h2>
+                <div class="regions-masonry">
+                    <article class="region-tile rio">
+                        <div class="region-bg"></div>
+                        <div class="region-content">
+                            <h3> Rio de Janeiro</h3>
+                            <p class="region-tagline">Cidade Maravilhosa</p>
+                            <ul class="region-spots">
+                                <li>Christ Rédempteur</li>
+                                <li>Pain de Sucre</li>
+                                <li>Copacabana & Ipanema</li>
+                                <li>Santa Teresa</li>
+                            </ul>
+                            <div class="region-highlight">
+                                <strong>À ne pas rater :</strong> Carnaval en février/mars
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="region-tile amazonie">
+                        <div class="region-bg"></div>
+                        <div class="region-content">
+                            <h3> Amazonie</h3>
+                            <p class="region-tagline">Poumon de la Terre</p>
+                            <ul class="region-spots">
+                                <li>Manaus & Meeting of Waters</li>
+                                <li>Pantanal (observation wildlife)</li>
+                                <li>Croisières sur l'Amazone</li>
+                                <li>Communautés indigènes</li>
+                            </ul>
+                            <div class="region-highlight">
+                                <strong>Meilleure période :</strong> Saison sèche (mai-octobre)
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="region-tile salvador">
+                        <div class="region-bg"></div>
+                        <div class="region-content">
+                            <h3> Salvador de Bahia</h3>
+                            <p class="region-tagline">Capital afro-brésilienne</p>
+                            <ul class="region-spots">
+                                <li>Pelourinho (Centre historique)</li>
+                                <li>Capoeira & musique afro</li>
+                                <li>Cuisine bahianaise</li>
+                                <li>Plages du Litoral Norte</li>
+                            </ul>
+                            <div class="region-highlight">
+                                <strong>Spécialité :</strong> Acarajé et moqueca
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="region-tile iguazu">
+                        <div class="region-bg"></div>
+                        <div class="region-content">
+                            <h3> Chutes d'Iguaçu</h3>
+                            <p class="region-tagline">Merveille naturelle</p>
+                            <ul class="region-spots">
+                                <li>275 cascades sur 3km</li>
+                                <li>Côtés brésilien & argentin</li>
+                                <li>Parc national</li>
+                                <li>Faune tropicale</li>
+                            </ul>
+                            <div class="region-highlight">
+                                <strong>Conseil :</strong> 2-3 jours pour voir les deux côtés
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Budget avec tableaux créatifs -->
+        <section class="budget-bresil">
+            <div class="container">
+                <h2>💸 Budget voyage au Brésil</h2>
+                <div class="budget-container">
+                    <div class="budget-intro">
+                        <p>Le Brésil peut être très abordable si vous savez où chercher ! Voici nos estimations par jour et par personne :</p>
+                    </div>
+                    
+                    <div class="budget-tables">
+                        <table class="budget-table backpacker">
+                            <thead>
+                                <tr>
+                                    <th colspan="2"> Backpacker</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hébergement</td>
+                                    <td>15-25€</td>
+                                </tr>
+                                <tr>
+                                    <td>Nourriture</td>
+                                    <td>10-15€</td>
+                                </tr>
+                                <tr>
+                                    <td>Transport</td>
+                                    <td>8-20€</td>
+                                </tr>
+                                <tr>
+                                    <td>Activités</td>
+                                    <td>5-15€</td>
+                                </tr>
+                                <tr class="total">
+                                    <td><strong>Total/jour</strong></td>
+                                    <td><strong>38-75€</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="budget-table comfort">
+                            <thead>
+                                <tr>
+                                    <th colspan="2"> Confort</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hébergement</td>
+                                    <td>40-80€</td>
+                                </tr>
+                                <tr>
+                                    <td>Nourriture</td>
+                                    <td>25-40€</td>
+                                </tr>
+                                <tr>
+                                    <td>Transport</td>
+                                    <td>15-35€</td>
+                                </tr>
+                                <tr>
+                                    <td>Activités</td>
+                                    <td>20-40€</td>
+                                </tr>
+                                <tr class="total">
+                                    <td><strong>Total/jour</strong></td>
+                                    <td><strong>100-195€</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="budget-table luxury">
+                            <thead>
+                                <tr>
+                                    <th colspan="2"> Luxe</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hébergement</td>
+                                    <td>150-400€</td>
+                                </tr>
+                                <tr>
+                                    <td>Nourriture</td>
+                                    <td>60-120€</td>
+                                </tr>
+                                <tr>
+                                    <td>Transport</td>
+                                    <td>50-150€</td>
+                                </tr>
+                                <tr>
+                                    <td>Activités</td>
+                                    <td>80-200€</td>
+                                </tr>
+                                <tr class="total">
+                                    <td><strong>Total/jour</strong></td>
+                                    <td><strong>340-870€</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activités avec mise en page innovante -->
+        <section class="activites-bresil">
+            <div class="container">
+                <h2> Expériences brésiliennes</h2>
+                <div class="activites-layout">
+                    <div class="activites-column nature">
+                        <h3> Nature & Aventure</h3>
+                        <div class="activite-card">
+                            <h4>Trek en Amazonie</h4>
+                            <p>3-7 jours dans la forêt avec guide indigène</p>
+                            <span class="prix">200-500€</span>
+                        </div>
+                        <div class="activite-card">
+                            <h4>Observation des baleines</h4>
+                            <p>Saison juillet-novembre à Abrolhos</p>
+                            <span class="prix">150€</span>
+                        </div>
+                        <div class="activite-card">
+                            <h4>Pantanal Safari</h4>
+                            <p>Jaguars, caïmans et oiseaux exotiques</p>
+                            <span class="prix">300-800€</span>
+                        </div>
+                    </div>
+
+                    <div class="activites-column culture">
+                        <h3> Culture & Musique</h3>
+                        <div class="activite-card">
+                            <h4>Cours de capoeira</h4>
+                            <p>Art martial afro-brésilien à Salvador</p>
+                            <span class="prix">20-40€</span>
+                        </div>
+                        <div class="activite-card">
+                            <h4>École de samba</h4>
+                            <p>Visite des ateliers de préparation</p>
+                            <span class="prix">25€</span>
+                        </div>
+                        <div class="activite-card">
+                            <h4>Cours de cuisine bahianaise</h4>
+                            <p>Moqueca, acarajé et bobo de camarão</p>
+                            <span class="prix">60€</span>
+                        </div>
+                    </div>
+
+                    <div class="activites-column plage">
+                        <h3> Plages & Détente</h3>
+                        <div class="activite-card">
+                            <h4>Hang gliding à Rio</h4>
+                            <p>Vol au-dessus des plages mythiques</p>
+                            <span class="prix">120€</span>
+                        </div>
+                        <div class="activite-card">
+                            <h4>Kitesurf à Jericoacoara</h4>
+                            <p>Spot de niveau mondial au Ceará</p>
+                            <span class="prix">50€/cours</span>
+                        </div>
+                        <div class="activite-card">
+                            <h4>Croisière à Fernando de Noronha</h4>
+                            <p>Archipel protégé aux eaux cristallines</p>
+                            <span class="prix">1200€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulaire avec style brésilien -->
+        <section class="contact-bresil">
+            <div class="container">
+                <div class="contact-brazil-layout">
+                    <div class="contact-info-brazil">
+                        <h2> Préparez votre aventure brésilienne</h2>
+                        <p>Carlos, guide natif de Rio, vous aide à découvrir les trésors cachés du Brésil. De l'Amazonie aux favelas, vivez une expérience authentique !</p>
+                        
+                        <div class="guide-carlos">
+                            <div class="carlos-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Carlos" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="carlos-info">
+                                <h4>Carlos Silva</h4>
+                                <p>Guide certifié Embratur • Carioca pur sang</p>
+                                <div class="carlos-specialties">
+                                    <span> Rio & Sud-Est</span>
+                                    <span> Écotourisme</span>
+                                    <span> Culture locale</span>
+                                </div>
+                                <div class="carlos-languages">
+                                    <small>Langues : Portugais, Français, Anglais, Espagnol</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial">
+                            <blockquote>
+                                "Carlos nous a fait découvrir le vrai Brésil ! Au-delà des clichés touristiques, une immersion totale dans la culture carioca."
+                            </blockquote>
+                            <cite>— Sophie & Laurent, Marseille</cite>
+                        </div>
+                    </div>
+
+                    <form class="brasil-form">
+                        <h3>Construisons votre voyage sur mesure</h3>
+                        
+                        <fieldset class="form-section">
+                            <legend>Vos informations</legend>
+                            <div class="input-group">
+                                <input type="text" placeholder="Prénom *" required>
+                                <input type="text" placeholder="Nom *" required>
+                            </div>
+                            <input type="email" placeholder="Email *" required>
+                            <input type="tel" placeholder="Téléphone (optionnel)">
+                        </fieldset>
+
+                        <fieldset class="form-section">
+                            <legend>Votre voyage</legend>
+                            <div class="input-group">
+                                <select required>
+                                    <option value="">Durée souhaitée *</option>
+                                    <option value="1-semaine">1 semaine</option>
+                                    <option value="2-semaines">2 semaines</option>
+                                    <option value="3-semaines">3 semaines</option>
+                                    <option value="1-mois">1 mois</option>
+                                    <option value="plus">Plus d'1 mois</option>
+                                </select>
+                                <select>
+                                    <option value="">Période de l'année</option>
+                                    <option value="janvier-mars">Jan-Mar (Été/Carnaval)</option>
+                                    <option value="avril-juin">Avr-Juin (Automne)</option>
+                                    <option value="juillet-septembre">Jul-Sep (Hiver sec)</option>
+                                    <option value="octobre-decembre">Oct-Déc (Printemps)</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <input type="number" placeholder="Nombre de personnes" min="1" max="20">
+                                <select>
+                                    <option value="">Budget approximatif (€)</option>
+                                    <option value="petit">1000-2000€</option>
+                                    <option value="moyen">2000-4000€</option>
+                                    <option value="confort">4000-8000€</option>
+                                    <option value="luxe">8000€+</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-section">
+                            <legend>Vos envies de Brésil</legend>
+                            <div class="envies-grid">
+                                <label class="envie-item">
+                                    <input type="checkbox" name="envies" value="plages">
+                                    <span class="envie-icon"></span>
+                                    <span class="envie-text">Plages paradisiaques</span>
+                                </label>
+                                <label class="envie-item">
+                                    <input type="checkbox" name="envies" value="amazonie">
+                                    <span class="envie-icon"></span>
+                                    <span class="envie-text">Amazonie</span>
+                                </label>
+                                <label class="envie-item">
+                                    <input type="checkbox" name="envies" value="rio">
+                                    <span class="envie-icon"></span>
+                                    <span class="envie-text">Rio de Janeiro</span>
+                                </label>
+                                <label class="envie-item">
+                                    <input type="checkbox" name="envies" value="culture">
+                                    <span class="envie-icon"></span>
+                                    <span class="envie-text">Culture & Musique</span>
+                                </label>
+                                <label class="envie-item">
+                                    <input type="checkbox" name="envies" value="nature">
+                                    <span class="envie-icon"></span>
+                                    <span class="envie-text">Nature & Safari</span>
+                                </label>
+                                <label class="envie-item">
+                                    <input type="checkbox" name="envies" value="gastronomie">
+                                    <span class="envie-icon"></span>
+                                    <span class="envie-text">Gastronomie</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-section">
+                            <legend>Style de voyage</legend>
+                            <div class="style-radio">
+                                <label class="style-option">
+                                    <input type="radio" name="style" value="aventure" checked>
+                                    <span class="radio-button"></span>
+                                    <strong>Aventure</strong> - Hors des sentiers battus
+                                </label>
+                                <label class="style-option">
+                                    <input type="radio" name="style" value="equilibre">
+                                    <span class="radio-button"></span>
+                                    <strong>Équilibré</strong> - Mix découverte/détente
+                                </label>
+                                <label class="style-option">
+                                    <input type="radio" name="style" value="detente">
+                                    <span class="radio-button"></span>
+                                    <strong>Détente</strong> - Plages et bien-être
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-section">
+                            <textarea placeholder="Racontez-nous vos rêves de voyage au Brésil... Avez-vous des souhaits particuliers ?" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-brasil">
+                            <span>🇧🇷</span>
+                            Partir à l'aventure brésilienne !
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 GlobeTrotters - <a href="index.html">Retour à l'accueil</a> | Obrigado pela visita! 🇧🇷</p>
+        </div>
+    </footer>
+</body>
+</html>

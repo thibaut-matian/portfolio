@@ -1,0 +1,711 @@
+.france-page {
+    --primary-color: #1e3a8a; /* Bleu royal profond */
+    --secondary-color: #dc2626; /* Rouge vif */
+    --accent-color: #f59e0b; /* Or chaleureux */
+    --lavender: #a78bfa; /* Lavande provence */
+    --wine: #881337; /* Bordeaux */
+    --rose: #fb7185; /* Rose romantique */
+    
+    /* Effets Glass Morphism */
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    --glass-blur: blur(15px);
+    
+    /* Gradients élégants */
+    --france-gradient: linear-gradient(135deg, #1e3a8a 0%, #dc2626 50%, #f59e0b 100%);
+    --elegant-gradient: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(220, 38, 38, 0.8));
+    --romantic-gradient: linear-gradient(135deg, #fb7185 0%, #a78bfa 50%, #f59e0b 100%);
+}
+
+/* Animation de fond dynamique élégante */
+.france-page {
+    background: linear-gradient(-45deg, #f0f4ff, #fef2f2, #fff7ed, #faf5ff);
+    background-size: 400% 400%;
+    animation: elegantFlow 20s ease infinite;
+}
+
+@keyframes elegantFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Hero France - Glass Effect élégant */
+.country-hero {
+    background: linear-gradient(rgba(30, 58, 138, 0.5), rgba(220, 38, 38, 0.4)),
+                url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80') center/cover;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    backdrop-filter: blur(3px);
+}
+
+.hero-overlay {
+    width: 100%;
+    z-index: 2;
+}
+
+.country-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.country-intro h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.country-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.country-tags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: var(--glass-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 2px solid var(--glass-border);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.3);
+}
+
+/* Sections spécifiques avec Glass */
+.intro-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(240, 244, 255, 0.6), rgba(254, 242, 242, 0.4));
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-section::before {
+    content: '🗼';
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 12rem;
+    opacity: 0.03;
+    animation: float 25s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(20px, -30px) rotate(5deg); }
+    66% { transform: translate(-20px, 20px) rotate(-5deg); }
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.intro-text h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.intro-text p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+.country-facts {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 2px solid var(--glass-border);
+    border-left: 5px solid var(--primary-color);
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease;
+}
+
+.country-facts:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(30, 58, 138, 0.3);
+}
+
+.country-facts h3 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.facts-list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.facts-list dt {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.facts-list dd {
+    color: var(--text-light);
+    margin-left: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Section Budget avec ambiance élégante */
+.budget-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.15), rgba(251, 113, 133, 0.1));
+    position: relative;
+}
+
+.budget-section::after {
+    content: '💰';
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+    font-size: 8rem;
+    opacity: 0.05;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.05; }
+    50% { transform: scale(1.1); opacity: 0.08; }
+}
+
+.budget-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.table-container {
+    overflow-x: auto;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-radius: 1.5rem;
+    border: 2px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease;
+}
+
+.table-container:hover {
+    box-shadow: 0 15px 50px rgba(30, 58, 138, 0.25);
+}
+
+.budget-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.budget-table caption {
+    padding: 1rem;
+    font-style: italic;
+    color: var(--text-light);
+}
+
+.budget-table th,
+.budget-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.budget-table thead th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+.budget-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.budget-table tbody tr:hover {
+    background: rgba(30, 58, 138, 0.1);
+    transform: scale(1.01);
+}
+
+.total-row {
+    background: var(--bg-light) !important;
+    border-top: 2px solid var(--primary-color);
+}
+
+/* Section Attractions avec ambiance culturelle */
+.attractions-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(255, 247, 237, 0.6), rgba(250, 245, 255, 0.4));
+    position: relative;
+}
+
+.attractions-section::before {
+    content: '🎨';
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 10rem;
+    opacity: 0.04;
+    animation: float 30s ease-in-out infinite;
+}
+
+.attractions-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.attraction-category {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 2px solid var(--glass-border);
+    border-top: 5px solid var(--secondary-color);
+    box-shadow: var(--glass-shadow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.attraction-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--france-gradient);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.attraction-category:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(220, 38, 38, 0.3);
+}
+
+.attraction-category:hover::before {
+    opacity: 0.05;
+}
+
+.attraction-category h3 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.attractions-list {
+    counter-reset: attraction-counter;
+}
+
+.attractions-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    padding-left: 2rem;
+}
+
+.attractions-list li:last-child {
+    border-bottom: none;
+}
+
+/* Style différent pour ol */
+ol.attractions-list li {
+    counter-increment: attraction-counter;
+}
+
+ol.attractions-list li::before {
+    content: counter(attraction-counter);
+    position: absolute;
+    left: 0;
+    top: 0.75rem;
+    background: var(--secondary-color);
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Style différent pour ul */
+ul.attractions-list li::before {
+    content: "🇫🇷";
+    position: absolute;
+    left: 0;
+    top: 0.75rem;
+}
+
+/* Section Itinéraire - Flexbox avec Glass élégant */
+.itinerary-section {
+    padding: 4rem 0;
+    background: var(--elegant-gradient);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.itinerary-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.05)" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,197.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.itinerary-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.itinerary-flex {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.day-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 2px solid var(--glass-border);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: var(--glass-shadow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.day-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.day-number {
+    background: var(--accent-color);
+    color: var(--text-dark);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.5);
+    transition: all 0.3s ease;
+}
+
+.day-card:hover .day-number {
+    transform: scale(1.2) rotate(360deg);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.8);
+}
+
+.day-card h4 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.day-card p {
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Section Contact France - Ambiance chaleureuse */
+.contact-france {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(251, 113, 133, 0.1), rgba(167, 139, 250, 0.15));
+    position: relative;
+}
+
+.contact-france::before {
+    content: '❤️';
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    font-size: 10rem;
+    opacity: 0.04;
+    animation: pulse 5s ease-in-out infinite;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.contact-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 0.75rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: 4px solid var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.1);
+    transition: all 0.3s ease;
+}
+
+.detail:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.2);
+}
+
+.detail strong {
+    color: var(--primary-color);
+}
+
+/* Formulaire France - Glass Effect */
+.france-form {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 2px solid var(--glass-border);
+    box-shadow: 0 15px 50px rgba(30, 58, 138, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.france-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--france-gradient);
+}
+
+.france-form input,
+.france-form select,
+.france-form textarea {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.france-form input:focus,
+.france-form select:focus,
+.france-form textarea:focus {
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.9);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+    transform: translateY(-2px);
+}
+
+.france-form button {
+    background: var(--france-gradient);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.france-form button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.france-form button:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(30, 58, 138, 0.5);
+}
+
+.france-form button:hover::before {
+    left: 100%;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.checkbox-label:hover {
+    background: rgba(30, 58, 138, 0.1);
+    transform: translateX(5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(30, 58, 138, 0.2);
+}
+
+.checkbox-label input[type="checkbox"]:checked + span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+/* Responsive France */
+@media (max-width: 768px) {
+    .country-intro h1 {
+        font-size: 2.5rem;
+    }
+    
+    .country-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .attractions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .itinerary-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .country-intro h1 {
+        font-size: 2rem;
+    }
+    
+    .day-card {
+        min-width: 100%;
+    }
+    
+    .budget-table {
+        font-size: 0.9rem;
+    }
+    
+    .budget-table th,
+    .budget-table td {
+        padding: 0.5rem;
+    }
+}
+
+/* Breakpoint très petits écrans */
+@media (max-width: 480px) {
+    .attractions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .itinerary-flexbox {
+        flex-direction: column;
+    }
+    
+    .country-intro h1 {
+        font-size: 3rem;
+    }
+    
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+}

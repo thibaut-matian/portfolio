@@ -1,0 +1,1082 @@
+/* ===== STYLES SPÉCIFIQUES BRÉSIL - LIQUID GLASS ===== */
+
+/* Couleurs thème Brésil - Plus chaleureuses */
+.bresil-page {
+    --primary-color: #00a859; /* Vert émeraude chaleureux */
+    --secondary-color: #ffd000; /* Jaune soleil */
+    --accent-color: #0047ab; /* Bleu profond */
+    --tropical-color: #ff7043; /* Orange corail */
+    --beach-color: #26c6da; /* Turquoise */
+    --warm-coral: #ff6f61; /* Corail chaud */
+    --soft-sand: #ffeaa7; /* Sable doux */
+    --sunset-orange: #fd79a8; /* Rose coucher de soleil */
+    
+    /* Effets Glass Morphism */
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    --glass-blur: blur(15px);
+    
+    /* Gradients chaleureux */
+    --warm-gradient: linear-gradient(135deg, #ff6f61 0%, #ffd000 50%, #00a859 100%);
+    --sunset-gradient: linear-gradient(135deg, #ff7043 0%, #fd79a8 50%, #26c6da 100%);
+    --tropical-gradient: linear-gradient(135deg, rgba(255, 112, 67, 0.9), rgba(38, 198, 218, 0.8));
+}
+
+/* Animation de fond dynamique */
+.bresil-page {
+    background: linear-gradient(-45deg, #ffeaa7, #ff7043, #26c6da, #00a859);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Hero Brésil - Glass Effect */
+.country-hero {
+    background: linear-gradient(135deg, rgba(255, 112, 67, 0.4), rgba(38, 198, 218, 0.4)),
+                url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=1200&q=80') center/cover;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.hero-overlay {
+    width: 100%;
+    z-index: 2;
+}
+
+.country-intro {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.country-intro h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.country-subtitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    opacity: 0.95;
+}
+
+.country-tags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: var(--glass-bg);
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    border: 2px solid var(--glass-border);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    box-shadow: var(--glass-shadow);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.3);
+}
+
+/* Section Intro Brésil - Layout asymétrique avec Glass */
+.bresil-intro {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, rgba(255, 234, 167, 0.3), rgba(38, 198, 218, 0.2));
+    position: relative;
+    overflow: hidden;
+}
+
+.bresil-intro::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 112, 67, 0.3), transparent);
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: float 20s ease-in-out infinite;
+}
+
+.bresil-intro::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(38, 198, 218, 0.3), transparent);
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: float 25s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(30px, -50px) rotate(120deg); }
+    66% { transform: translate(-20px, 20px) rotate(240deg); }
+}
+
+.intro-asymetric {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.intro-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+
+.lead {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+}
+
+.bresil-essence {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.essence-item {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 2px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.essence-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--warm-gradient);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.essence-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px 0 rgba(255, 112, 67, 0.3);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.essence-item:hover::before {
+    opacity: 0.1;
+}
+
+.essence-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.essence-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.essence-item p {
+    color: var(--text-light);
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Sidebar Brésil */
+.bresil-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 2px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease;
+}
+
+.sidebar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px 0 rgba(38, 198, 218, 0.3);
+}
+
+.sidebar-card.climate {
+    border-top: 4px solid var(--secondary-color);
+}
+
+.sidebar-card.practical {
+    border-top: 4px solid var(--accent-color);
+}
+
+.sidebar-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.climate-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.season {
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.season strong {
+    color: var(--primary-color);
+}
+
+.season span {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.practical-list {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.practical-list dt {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.practical-list dd {
+    color: var(--text-light);
+    margin-left: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Régions Brésil - Masonry Grid avec Glass */
+.regions-bresil {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(255, 234, 167, 0.2), rgba(255, 112, 67, 0.1));
+    position: relative;
+}
+
+.regions-bresil h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.regions-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    grid-auto-rows: min-content;
+}
+
+.region-tile {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: 2px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+.region-tile:hover {
+    transform: translateY(-12px) rotate(2deg);
+    box-shadow: 0 25px 70px 0 rgba(255, 112, 67, 0.35);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.region-bg {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.region-tile.rio .region-bg {
+    background-image: url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&q=80');
+}
+
+.region-tile.amazonie .region-bg {
+    background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80');
+}
+
+.region-tile.salvador .region-bg {
+    background-image: url('https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?w=600&q=80');
+}
+
+.region-tile.iguazu .region-bg {
+    background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=80');
+}
+
+.region-content {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.region-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.region-tagline {
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.region-spots {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.region-spots li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.region-spots li:last-child {
+    border-bottom: none;
+}
+
+.region-spots li::before {
+    content: '🇧🇷';
+    position: absolute;
+    left: 0;
+}
+
+.region-highlight {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 2px solid rgba(255, 223, 0, 0.5);
+    color: var(--text-dark);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(255, 223, 0, 0.3);
+    font-weight: 500;
+}
+
+/* Budget Brésil - Tables créatives avec Glass */
+.budget-bresil {
+    padding: 4rem 0;
+    background: var(--sunset-gradient);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.budget-bresil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,197.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.budget-bresil h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.budget-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.budget-tables {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.budget-table {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 2px solid var(--glass-border);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: var(--glass-shadow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.budget-table:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.3);
+}
+
+.budget-table thead th {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.budget-table.backpacker thead th {
+    background: rgba(0, 151, 57, 0.8);
+}
+
+.budget-table.comfort thead th {
+    background: rgba(254, 223, 0, 0.8);
+    color: var(--text-dark);
+}
+
+.budget-table.luxury thead th {
+    background: rgba(0, 39, 118, 0.8);
+}
+
+.budget-table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.budget-table td:first-child {
+    font-weight: 500;
+}
+
+.budget-table td:last-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+.budget-table .total td {
+    background: rgba(255,255,255,0.1);
+    font-size: 1.1rem;
+}
+
+/* Activités Brésil - Layout en colonnes avec ambiance chaleureuse */
+.activites-bresil {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(255, 111, 97, 0.15), rgba(255, 234, 167, 0.2));
+    position: relative;
+}
+
+.activites-bresil::before {
+    content: '🏖️';
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 10rem;
+    opacity: 0.05;
+    animation: float 15s ease-in-out infinite;
+}
+
+.activites-bresil::after {
+    content: '🌴';
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 10rem;
+    opacity: 0.05;
+    animation: float 20s ease-in-out infinite reverse;
+}
+
+.activites-bresil h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.activites-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.activites-column {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 2px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease;
+}
+
+.activites-column:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px 0 rgba(255, 112, 67, 0.3);
+}
+
+.activites-column h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.activites-column.nature h3 {
+    background: var(--primary-color);
+}
+
+.activites-column.culture h3 {
+    background: var(--tropical-color);
+}
+
+.activites-column.plage h3 {
+    background: var(--beach-color);
+}
+
+.activite-card {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.activite-card:last-child {
+    margin-bottom: 0;
+}
+
+.activite-card:hover {
+    transform: translateX(8px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(255, 112, 67, 0.2);
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.activite-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.activite-card p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.prix {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--secondary-color);
+    color: var(--text-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Contact Brésil - Ambiance humaine et chaleureuse */
+.contact-bresil {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(253, 121, 168, 0.2), rgba(255, 234, 167, 0.3));
+    position: relative;
+}
+
+.contact-bresil::before {
+    content: '💛';
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-size: 8rem;
+    opacity: 0.08;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.08; }
+    50% { transform: scale(1.1); opacity: 0.12; }
+}
+
+.contact-brazil-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.contact-info-brazil h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.contact-info-brazil p {
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.guide-carlos {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 2px solid var(--glass-border);
+    border-left: 5px solid var(--warm-coral);
+    margin-bottom: 2rem;
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease;
+}
+
+.guide-carlos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(255, 111, 97, 0.3);
+}
+
+.carlos-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 3px solid var(--secondary-color);
+}
+
+.carlos-info {
+    text-align: center;
+}
+
+.carlos-info h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.carlos-info p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.carlos-specialties {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.carlos-specialties span {
+    background: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    border: 1px solid var(--border-color);
+}
+
+.carlos-languages {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    border: 2px solid rgba(255, 223, 0, 0.4);
+    box-shadow: 0 8px 32px rgba(255, 223, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 5rem;
+    color: var(--soft-sand);
+    opacity: 0.3;
+    font-family: Georgia, serif;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.testimonial cite {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Formulaire Brésil - Glass Effect */
+.brasil-form {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    padding: 3rem;
+    border-radius: 2rem;
+    border: 2px solid var(--glass-border);
+    box-shadow: 0 15px 50px 0 rgba(31, 38, 135, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.brasil-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: var(--warm-gradient);
+}
+
+.brasil-form h3 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.form-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-section legend {
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0 0.5rem;
+    background: white;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.brasil-form input,
+.brasil-form select,
+.brasil-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.brasil-form input:focus,
+.brasil-form select:focus,
+.brasil-form textarea:focus {
+    border-color: var(--warm-coral);
+    background: rgba(255, 255, 255, 0.9);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.1);
+    transform: translateY(-2px);
+}
+
+.envies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.envie-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.envie-item:hover {
+    border-color: var(--warm-coral);
+    background: rgba(255, 111, 97, 0.15);
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(255, 111, 97, 0.2);
+}
+
+.envie-item input[type="checkbox"] {
+    display: none;
+}
+
+.envie-item input[type="checkbox"]:checked + .envie-icon {
+    transform: scale(1.2);
+}
+
+.envie-item input[type="checkbox"]:checked ~ .envie-text {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.envie-icon {
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.style-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.style-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.style-option:hover {
+    border-color: var(--primary-color);
+    background: rgba(0, 151, 57, 0.05);
+}
+
+.style-option input[type="radio"] {
+    display: none;
+}
+
+.radio-button {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    position: relative;
+    transition: var(--transition);
+}
+
+.style-option input[type="radio"]:checked + .radio-button {
+    border-color: var(--primary-color);
+}
+
+.style-option input[type="radio"]:checked + .radio-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.btn-brasil {
+    width: 100%;
+    background: var(--warm-gradient);
+    color: white;
+    padding: 1.25rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    box-shadow: 0 10px 30px rgba(255, 111, 97, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-brasil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-brasil:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(255, 111, 97, 0.5);
+}
+
+.btn-brasil:hover::before {
+    left: 100%;
+}
+
+.btn-brasil:active {
+    transform: translateY(-2px) scale(0.98);
+}
+
+/* Responsive Brésil */
+@media (max-width: 768px) {
+    .country-intro h1 {
+        font-size: 3rem;
+    }
+    
+    .intro-asymetric {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .bresil-essence {
+        grid-template-columns: 1fr;
+    }
+    
+    .regions-masonry {
+        grid-template-columns: 1fr;
+    }
+    
+    .budget-tables {
+        grid-template-columns: 1fr;
+    }
+    
+    .activites-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-brazil-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .envies-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .country-intro h1 {
+        font-size: 2.5rem;
+    }
+    
+    .carlos-specialties {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .budget-table td {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Breakpoint très petits écrans */
+@media (max-width: 480px) {
+    .regions-masonry {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .budget-tables {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .activities-columns {
+        grid-template-columns: 1fr;
+    }
+    
+    .country-intro h1 {
+        font-size: 3rem;
+    }
+    
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
