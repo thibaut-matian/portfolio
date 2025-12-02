@@ -9,7 +9,7 @@ const projectsData = [
     tags: ["React", "Stripe", "Framer Motion"],
     link: "https://github.com/ton-pseudo/projet-1", // Mets tes liens ici
     color: "from-cyan-400 to-blue-600",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop"
+    image: "/projets/img/secret_santa.png"
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const projectsData = [
     tags: ["Next.js", "Tailwind", "Recharts"],
     link: "https://github.com/ton-pseudo/projet-2",
     color: "from-purple-400 to-pink-600",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop"
+    image: "/projets/img/voyage.png"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const projectsData = [
     tags: ["React", "Node.js", "OpenAI"],
     link: "https://github.com/ton-pseudo/projet-3",
     color: "from-emerald-400 to-cyan-600",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1000&auto=format&fit=crop"
+    image: "/projets/img/memory.png"
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const projectsData = [
     tags: ["Three.js", "R3F", "Blender"],
     link: "https://github.com/ton-pseudo/projet-4",
     color: "from-orange-400 to-red-600",
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop"
+    image: "/projets/img/fansite.png"
   },
 ];
 
