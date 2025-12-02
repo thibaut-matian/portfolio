@@ -80,7 +80,7 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-4 text-slate-300">
                   <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-cyan-400">✉️</div>
-                  <span>contact@monportfolio.com</span>
+                  <span>thibaut.matian3@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-4 text-slate-300">
                   <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-cyan-400">📍</div>
@@ -102,7 +102,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="bg-slate-900/50 border border-white/10 rounded-xl p-4 text-white focus:outline-none focus:border-cyan-400 transition-colors placeholder:text-slate-600"
-                  placeholder="John Doe"
+                  placeholder="Nom Prenom"
                 />
               </div>
 
@@ -116,7 +116,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="bg-slate-900/50 border border-white/10 rounded-xl p-4 text-white focus:outline-none focus:border-cyan-400 transition-colors placeholder:text-slate-600"
-                  placeholder="john@example.com"
+                  placeholder="nom@example.com"
                 />
               </div>
 
