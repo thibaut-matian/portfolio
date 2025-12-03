@@ -25,7 +25,7 @@ const projectsData = [
     title: "Memory",
     description: "Une interface de memory game avec connexion/inscription et classement.",
     tags: ["HTML", "CSS/LIQUID EFFECT", "SQL"],
-    link: "https://github.com/thibaut-matian/memory.git",
+    link: "http://memory.alwaysdata.net",
     color: "from-emerald-400 to-cyan-600",
     image: "/projets/img/memory.png"
   },
