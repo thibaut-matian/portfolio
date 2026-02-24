@@ -38,6 +38,14 @@ const projectsData = [
     color: "from-orange-400 to-red-600",
     image: "/projets/img/fansite.png"
   },
+    { id: 5,
+    title: "Site/Blog pour chef",
+    description: "Site pour chaque chef en herbe, avec ajout de leur futur creation",
+    tags: ["React", "Tailwind"],
+    link: "https://portfolio-cheffe.vercel.app",
+    color: "from-orange-400 to-red-600",
+    image: "/projets/img/cheffe.png"
+  },
 ];
 
 const FlipCard = ({ project }) => {
