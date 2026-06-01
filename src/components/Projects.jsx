@@ -46,6 +46,16 @@ const projectsData = [
     color: "from-orange-400 to-red-600",
     image: "/projets/img/cheffe.png"
   },
+  {
+    id: "projet-marseille",
+    title: "Site Web - Projet Marseillais",
+    role: "Chef de Projet & Développeur Web",
+    duration: "3 mois (Immersion en entreprise)",
+    description: "Pilotage, conception et développement complet d'une plateforme web dédiée à un projet local marseillais. Gestion des livrables, planification et respect des délais.",
+    technologies: ["React", "Node.js", "Express", "PostgreSQL"], // Ajuste avec tes vraies technos !
+    githubLink: "https://github.com/thibaut-matian/portfolio.git", // Ton lien GitHub temporaire ou définitif
+    liveLink: "#" // On laisse "#" pour l'instant vu qu'il est en local, on changera après !
+  }
 ];
 
 const FlipCard = ({ project }) => {
