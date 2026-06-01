@@ -16,7 +16,7 @@ const skills = [
 const About = () => {
   
   const handleDownloadCV = () => {
-    window.open("/cv/index.html", "_blank");
+    window.open("/cv/cvmarseille.pdf", "_blank");
   };
 
   return (
