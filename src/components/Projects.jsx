@@ -38,7 +38,8 @@ const projectsData = [
     color: "from-orange-400 to-red-600",
     image: "/projets/img/fansite.png"
   },
-    { id: 5,
+  { 
+    id: 5,
     title: "Site/Blog pour chef",
     description: "Site pour chaque chef en herbe, avec ajout de leur futur creation",
     tags: ["React", "Tailwind"],
@@ -47,14 +48,13 @@ const projectsData = [
     image: "/projets/img/cheffe.png"
   },
   {
-    id: "projet-marseille",
+    id: 6,
     title: "Site Web - Projet Marseillais",
-    role: "Chef de Projet & Développeur Web",
-    duration: "3 mois (Immersion en entreprise)",
-    description: "Pilotage, conception et développement complet d'une plateforme web dédiée à un projet local marseillais. Gestion des livrables, planification et respect des délais.",
-    technologies: ["React", "Node.js", "Express", "PostgreSQL"], // Ajuste avec tes vraies technos !
-    githubLink: "https://github.com/thibaut-matian/portfolio.git", // Ton lien GitHub temporaire ou définitif
-    liveLink: "#" // On laisse "#" pour l'instant vu qu'il est en local, on changera après !
+    description: "[Chef de Projet - 3 mois] Pilotage, conception et développement complet d'une plateforme web dédiée à un projet local marseillais.",
+    tags: ["Gestion de Projet", "React", "Express", "PostgreSQL"], // Remplacé "technologies" par "tags" pour éviter le bug !
+    link: "https://github.com/thibaut-matian/portfolio.git", // Utilise ton lien github en attendant l'hébergement
+    color: "from-blue-500 to-cyan-400", // Un beau dégradé bleu/eau 💧
+    image: "/projets/img/marseille.png" // Pense à mettre une capture d'écran dans ce dossier public plus tard !
   }
 ];
 
@@ -92,11 +92,13 @@ const FlipCard = ({ project }) => {
         >
           {/* Image de fond avec overlay */}
           <div className="absolute inset-0 bg-slate-900">
-            <img 
-              src={project.image} 
-              alt={project.title} 
-              className="w-full h-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-110" 
-            />
+            {project.image && (
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                className="w-full h-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-110" 
+              />
+            )}
             <div className={`absolute inset-0 bg-linear-to-t ${project.color} opacity-40 mix-blend-overlay`} />
             <div className="absolute inset-0 bg-linear-to-t from-slate-900 via-transparent to-transparent" />
           </div>
@@ -124,13 +126,13 @@ const FlipCard = ({ project }) => {
 
           <h3 className="text-2xl font-bold text-white mb-4 relative z-10">{project.title}</h3>
           
-          <p className="text-slate-300 mb-6 leading-relaxed relative z-10">
+          <p className="text-slate-300 mb-6 leading-relaxed relative z-10 text-sm">
             {project.description}
           </p>
 
           {/* Tags */}
           <div className="flex flex-wrap justify-center gap-2 mb-8 relative z-10">
-            {project.tags.map(tag => (
+            {project.tags && project.tags.map(tag => (
               <span key={tag} className="px-3 py-1 text-xs font-medium rounded-full bg-white/10 border border-white/10 text-cyan-200">
                 {tag}
               </span>
@@ -150,7 +152,7 @@ const FlipCard = ({ project }) => {
               hover:scale-105 transition-transform duration-300
             `}
           >
-            Voir le projet
+            {project.id === 6 ? "Voir sur GitHub" : "Voir le projet"}
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
